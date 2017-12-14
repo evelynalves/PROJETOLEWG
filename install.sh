@@ -43,6 +43,8 @@ echo "- /usr/lib/cgi-bin"
 echo
 read -p "Deseja continuar com a instalação? (s ou n)?" opcao
 case $opcao in
-        [sS][iI]*[mM]*) instalar ;;
-        [nN][aAãÃ]*[oO]*) naoinstalar ;;
+        s) instalar ;;
+        S) instalar ;;
+        n) naoinstalar ;;
+        N) naoinstalar ;;
 esac
