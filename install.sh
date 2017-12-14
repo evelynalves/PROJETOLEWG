@@ -10,7 +10,7 @@ apt-get install apache2 -y
 
         echo "AddDefaultCharset UTF-8" >> /etc/apache2/conf-enabled/charset.conf
         a2enmod cgid
-        systemstl restart apache2
+        systemctl restart apache2
         service apache2 restart
 
 cp -r ./html /var/www/
