@@ -22,11 +22,11 @@ echo
 echo "Desinstalador dos Programas"
 echo "- Apache2"
 echo
-read -p "Deseja continuar desinstalação? (sim ou nao)" opcao
+read -p "Deseja continuar desinstalação? (s ou n)" opcao
 case $opcao in
-        sim) remover ;;
-        SIM) remover ;;
-        nao) naoremover;;
-        NAO) naoremover;;
+        s) remover ;;
+        S) remover ;;
+        n) naoremover;;
+        N) naoremover;;
         *) read -p "Opção invalida, tente novamente!"; sleep 2 ; exit 0 ;;
 esac
