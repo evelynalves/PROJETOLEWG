@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Inventário - Login</title>
+	<link href="Senai.ico" rel="shortcut icon" type="image/x-icon"/>
+	<style>
+
+	@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+	*{
+	margin: 0;
+	padding: 0;
+}
+.conteudo_geral{
+	width: 100vw; /*100% da largura da tela*/
+	height: 100vh; /*100% da altura da tela*/
+
+}
+.conteudo_esquerdo{
+		width: 50%;
+		height:  100%;
+		background:	white;
+		float: left;
+}
+.conteudo_esquerdo img{
+    width: 200px; 
+    height: 300px;
+	color:#FFF;
+	text-align: center;
+	padding-top: 30%;
+
+}
+.conteudo_esquerdo h1{
+	color:#000;
+	font: 'Arial';
+	text-align: center;
+	padding-top: 10%;
+
+}
+.conteudo_direito{
+	width: 	50%;
+	height: 100%;
+	background: #ff2d1e;
+	float: left;
+
+}
+.logo{
+	margin: 0 auto;
+	margin-top: 40%;
+	color: white;
+	font-family: 'Titillium Web', sans-serif;
+
+}
+
+.formulario{
+	width: 	50%;		
+	display: block;
+	margin:5% auto;
+}
+.formulario input{
+	width: 	100%;
+	height: 	1.7em;
+	margin-bottom: 1em;
+	}
+.formulario input[type="submit"]{
+		width: 103%;
+		height: 2.5em;
+		text-align: center;
+		border-radius: 3px; 
+		background: #fff;
+		color: 	#000;
+		box-shadow: 0 0 0 0;
+        border: 0 none;
+        outline: 0;
+}
+.formulario input::placeholder{
+	text-align: center;
+	color: 	#000;
+}
+
+	</style>
+</head>
+<body>
+<div class="conteudo_geral">
+	<div class="conteudo_esquerdo">
+		<center><img src="../slider1/4.jpg">
+	</div>
+	<div class="conteudo_direito">
+		<div class="logo">
+			<red><center><h2>O nome de usuário e/ou senha inserido não pertence a um usuário. Verifique seu nome de usuário e/ou senha e tente novamente.<center></br></h2><red>
+		</div>
+		<form class="formulario" action="../login.html" method="post">
+			<input type="submit" name="voltar" value="Voltar">
+		
+		
+		</form>
+	</div>
+</div>
+</body>
+</html>
+

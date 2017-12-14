@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Inventário</title>
+    <link href="Senai.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <input type="checkbox" id="bt_menu" />
+    <label for="bt_menu">&#9776;</label>
+    <nav class="menu">
+        <ul>
+            <li>
+                <a href="#">Patrimônio</a>
+                <ul>
+
+                    <li>
+                        <a href="../cadastraritem.html">Cadastrar itens</a>
+                    </li>
+                    <li>
+                        <a href="../modificaritem.html">Modificar itens</a>
+                    </li>
+
+                    <li>
+                        <a href="../removeritem.html">Excluir itens</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Estoque</a>
+                <ul>
+                    <li>
+                        <a href="../lpr.html">Patrimônios registrados</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Usuário</a>
+                <ul>
+                    <li>
+                        <a href="../cadastrarusr.html">Cadastrar usuário </a>
+                    </li>
+                    <li>
+                        <a href="../removerusr.html">Remover usuário </a>
+                    </li>
+                    <li>
+                        <a href="../listar.html">Listar usuários exitentes</a>
+                    </li>
+                </ul>
+		</li>
+            </li>            
+        </ul>
+</nav>
+        <nav class="logout">
+         <li>
+	<a href="../login.html"> Logout </a>
+	</li>
+        </nav>
+ 
+    <main>
+        <h1>Sistema de Gerenciamento - Inventário</h1>
+        <h2> Instruções </h2>
+    </main>
+    <section class="conteudo_central">
+        <article>
+            <h3>Aba Patrimônio</h3>
+            <p>Mostra três botões onde você pode cadastrar itens, modificar itens e/ou excluir itens.</p>
+        </article>
+        <article>
+            <h3>Aba Estoque</h3>
+            <p>
+                No botão ler patrimônios registrados o usuário pode ler todos os patrimônios inseridos.
+            </p>
+        </article>
+        <article>
+            <h3>Aba Usuário</h3>
+            <p>
+                Mostra três botões onde você pode cadastrar usuário, alterar usuário, remover usuário.
+            </p>
+        </article>
+        <article class="teste">
+            <h3>Botão Logout</h3>
+            <p>
+                Este botão volta para a página de login.
+            </p>
+        </article>
+    </section>
+
+</body>
+
+</html>

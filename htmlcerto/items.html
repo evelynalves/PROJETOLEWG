@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+            <meta charset="utf-8">
+            <title>Inventário </title>
+            <link href="Senai.ico" rel="shortcut icon" type="image/x-icon"/>
+    </head>
+            <style>
+            @import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Open Sans';
+            color: black;
+        }
+        h1{
+            margin-top: 30px;
+            font-size: 32px;
+        }
+        h2{
+            margin-top: 30px;
+            font-size: 28px;
+           } 
+        .menu {
+            width: 100%;
+            height: 3em;
+            background-color: #ff2d1e;
+            font-family: 'Arial';
+            display: flex;
+        }
+        main h1, main h2 {
+            text-align: center;
+            display: block;
+        }
+        .menu ul {
+                list-style: none;
+                position: relative;
+            }
+            .menu ul:nth-child(1) {
+                width: 200%;
+            }
+            .menu ul li:last-child {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+            }
+            .menu ul li {
+                width: 150px;
+                float: left;
+            }
+            .menu ul li > a {
+                padding: 16.5px;
+                display: block;
+                text-decoration: none;
+                text-align: center;
+                background-color: #ff2d1e;
+                color: #fff;
+            }
+            .menu ul ul {
+                position: absolute;
+                visibility: hidden;
+            }
+            .menu ul li:hover ul {
+                visibility: visible;
+            }
+            .menu a:hover {
+                background-color: #000;
+            }
+            .menu ul ul li {
+                float: none;
+                border-bottom: solid 1px #fff;
+            }
+                .menu ul li ul li a {
+                    background-color: #ff2d1e;
+            }
+        label[for="bt_menu"]{
+            padding: 5px;
+            background-color: #680055;
+            color: #fff;
+            font-family: Arial;
+            text-align: left;
+            font-size: 30px;
+            cursor: pointer;
+            height: 50px;
+        }
+        #bt_menu {
+            display: none;
+        }
+        label[for="bt_menu"]{
+            display: none;  
+        }
+         .conteudo_central{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+        }
+        .conteudo_central article * {
+            color: lightgray;
+        }
+        .conteudo_central article {
+            display: flex;
+            flex-flow: column;
+            width: 650px;
+            height:100px;
+            background: rgb(87, 87, 87);
+            margin: 50px;
+            text-align: center;
+            padding: 25px;
+            padding-bottom: 50px;
+            /*float: left;
+            border-width: medium;
+            border-style: solid;
+            border-color: #000; */
+            box-shadow: 5px 5px 20px rgb(158, 0, 0);
+            transition: transform .5s;
+        }
+        .conteudo_central article:hover {
+            transform: scale(1.05);
+        }
+        .conteudo_central article h3 {
+            margin-bottom: 10px;
+        }
+        .conteudo_central .titulo{
+            padding-top:10px;
+            padding-bottom: 10px;
+            font-size: 1.5em;
+        }
+        .hide{
+            display: none;
+        }
+        
+        @media(max-width: 800px) {
+            label[for="bt_menu"] {
+                display: block;
+                background-color: #ff2d1e
+            }
+            #bt_menu:checked ~ .menu{
+                margin-left: 0;
+            }
+            .menu{
+                margin-top: 0;
+                margin-left: -100%;
+                transition: all .3s;
+            }
+            .menu ul li {
+                width: 100%;
+                float: none;
+            }
+            .menu ul ul {
+                position: static;
+                overflow: hidden;
+                max-height: 0;
+                transition: all 1s;
+            }
+            .menu ul li:hover ul {
+                height: auto;
+                max-height: 200px;
+            }
+            body {background-color: white}
+        
+        }
+            </style>
+    
+            <input type="checkbox" id="bt_menu" />
+    <label for="bt_menu">&#9776;</label>
+    <nav class="menu">
+  
+     
+    </nav>
+
+<nav class="voltar">  <!--  no href voce coloca a pagina onde voce quer voltar, cod universal -->
+</nav>
+<section class="conteudo_central">
+    <article>
+        <h1>Item cadastrado com sucesso!
+            Redirecionando para a Home... 
+        </h1>
+    </article>
+</section>   
+<meta http-equiv="Refresh" content="4; url=../pgnadm.html"> 
+    </body>
+</html>

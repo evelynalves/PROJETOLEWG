@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+            <meta charset="utf-8">
+            <title>Inventário </title>
+            <link href="Senai.ico" rel="shortcut icon" type="image/x-icon"/>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../js/bootstrap.min.js" rel="stylesheet">
+	<style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+body{
+background-color: white;
+}
+
+        .menu {
+            width: 100%;
+            height: 50px;
+            background-color: #680055;
+            font-family: 'Arial';
+
+        }
+
+            .menu ul {
+                list-style: none;
+                position: relative;
+            }
+
+                .menu ul li {
+                    width: 150px;
+                    float: left;
+                }
+
+            .menu a {
+                padding: 15px;
+                display: block;
+                text-decoration: none;
+                text-align: center;
+                background-color: #680055;
+                color: #fff;
+            }
+
+            .menu ul ul {
+                position: absolute;
+                visibility: hidden;
+            }
+
+            .menu ul li:hover ul {
+                visibility: visible;
+            }
+
+            .menu a:hover {
+                background-color: #000;
+            }
+
+            .menu ul ul li {
+                float: none;
+                border-bottom: solid 1px #fff;
+            }
+
+                .menu ul ul li a {
+                    background-color: #680045;
+            }
+
+.voltar{
+            width: 100%;
+            height: 50px;
+            background-color: #FF2C1C;
+            font-family: 'arial';
+
+        }
+
+            .voltar ul {
+                list-style: none;
+                position: relative;
+            }
+
+                .voltar ul li {
+                    width: 150px;
+                    float: right;
+                }
+
+            .voltar a {
+                padding: 15px;
+                display: block;
+                text-decoration: none;
+                text-align: center;
+                background-color: #FF2C1C;
+                color: #fff;
+            }
+
+            .voltar ul ul {
+                position: absolute;
+                visibility: hidden;
+            }
+
+            .voltar ul li:hover ul {
+                visibility: visible;
+            }
+
+            .voltar a:hover {
+                background-color: #FF2C1C;
+                color: #;
+            }
+
+            .voltar ul ul li {
+                float: none;
+       		border-bottom: solid 1px #fff;
+            }
+
+                .voltar ul ul li a {
+                    background-color: #680045;
+                }
+		.lista{
+		color: black;
+		font-family: sans-serif;
+		margin: 0;
+		}	
+	
+	#formulario input{
+	width:300px;	
+}
+        
+    </style>
+
+    <nav class="voltar">
+            <ul>
+            <li><a href="../pgnadm.html"><b> Voltar </b></a>
+            </li>
+                </ul>
+            </li>
+        </nav>
+
+<body>
+<div class="lista">
+<center>
+<form action="cgi-bin/cadastraritem.cgi" id="formulario" method="POST"><br><br>
+  
+  Digite a localidade:<br>
+  <input type="text" name="local" class="form-control" ><br>
+  Digite a andar:<br>
+  <input type="text" name="andar" class="form-control" ><br>
+  Digite a sala:<br>
+  <input type="text" name="sala" class="form-control" ><br>
+  Digite a número de patrimônio:<br>
+  <input type="text" name="np" class="form-control" ><br>
+  Digite a número de série:<br>
+  <input type="text" name="ns" class="form-control" ><br>
+  Digite a marca:<br>
+  <input type="text" name="marca" class="form-control" ><br>
+  Digite a modelo:<br>
+  <input type="text" name="modelo" class="form-control" ><br>
+  <label for="subject">Adicione uma descrição: </label><br>
+    <textarea id="subject" name="descricao" style="height:180px; width:300px;" class="form-control"></textarea>
+
+  <br><br>
+ 
+  <input type="submit" value="Enviar">
+</form>
+</center>
+</body>
+</html>
