@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+            <meta charset="utf-8">
+            <title>Inventário </title>
+            <link href="Senai.ico" rel="shortcut icon" type="image/x-icon"/>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../js/bootstrap.min.js" rel="stylesheet">
+	<style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+body{
+background-color: white;
+}
+
+        .menu {
+            width: 100%;
+            height: 50px;
+            background-color: #680055;
+            font-family: 'Arial';
+
+        }
+
+            .menu ul {
+                list-style: none;
+                position: relative;
+            }
+
+                .menu ul li {
+                    width: 150px;
+                    float: left;
+                }
+
+            .menu a {
+                padding: 15px;
+                display: block;
+                text-decoration: none;
+                text-align: center;
+                background-color: #680055;
+                color: #fff;
+            }
+
+            .menu ul ul {
+                position: absolute;
+                visibility: hidden;
+            }
+
+            .menu ul li:hover ul {
+                visibility: visible;
+            }
+
+            .menu a:hover {
+                background-color: #000;
+            }
+
+            .menu ul ul li {
+                float: none;
+                border-bottom: solid 1px #fff;
+            }
+
+                .menu ul ul li a {
+                    background-color: #680045;
+            }
+
+.voltar{
+            width: 100%;
+            height: 50px;
+            background-color: #FF2C1C;
+            font-family: 'arial';
+
+        }
+
+            .voltar ul {
+                list-style: none;
+                position: relative;
+            }
+
+                .voltar ul li {
+                    width: 150px;
+                    float: right;
+                }
+
+            .voltar a {
+                padding: 15px;
+                display: block;
+                text-decoration: none;
+                text-align: center;
+                background-color: #FF2C1C;
+                color: #fff;
+            }
+
+            .voltar ul ul {
+                position: absolute;
+                visibility: hidden;
+            }
+
+            .voltar ul li:hover ul {
+                visibility: visible;
+            }
+
+            .voltar a:hover {
+                background-color: #FF2C1C;
+                color: #;
+            }
+
+            .voltar ul ul li {
+                float: none;
+       		border-bottom: solid 1px #fff;
+            }
+
+                .voltar ul ul li a {
+                    background-color: #680045;
+                }
+		.lista{
+		color: black;
+		font-family: sans-serif;
+		margin: 0;
+		}	
+	
+	#formulario input{
+	width:300px;	
+}
+        
+    </style>
+
+    <nav class="voltar">
+            <ul>
+            <li><a href="../pgnadm.html"><b> Voltar </b></a>
+            </li>
+                </ul>
+            </li>
+        </nav>
+
+<body>
+<div class="lista">
+
+<form action="pesquisa7.cgi" id="formulario" method="post" ><br><br>
+  
+  Digite o modelo:<br>
+  <input type="text" name="firstname" class="form-control" ><br>
+ 
+  <input type="submit" value="Pesquisar"
+
+</body>
+</html>
