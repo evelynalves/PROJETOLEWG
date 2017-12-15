@@ -1,0 +1,194 @@
+/*--------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------
+   1. BASE CSS
+    2. TOP AREA
+        2.1 MAINMENU AREA
+        2.2 SLIDER AREA
+        2.3 SEARCH FORM AREA
+    3. ABOUT AREA
+    4. PROMOTIONS AREA
+    5. MENUS AREA
+    6. RESERVATION BUTTON AREA
+    7. TEAM AREA
+    8. BLOG AREA
+    9. GALLERY AREA
+    10. FOOTER AREA
+    11. SCROLL TO TOP
+    12. SINGLE PAGE
+    13. BLOG PAGE
+        13.1 SIDEBAR AREA
+    14. SINGLE BLOG PAGE
+----------------------------------------------------------------------------------------*/
+
+
+/*--------------------
+   1. BASE CSS
+----------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Lato:400,700|PT+Sans+Narrow:400,700');
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+
+a {
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    color: #212324;
+}
+
+a:hover {
+    color: #ca3d26;
+}
+
+a:focus,
+a:hover {
+    outline: 0;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-family: "PT Sans Narrow", sans-serif;
+    font-weight: 700;
+}
+
+html,
+body {
+    height: 100%
+}
+a:hover {
+    text-decoration: none
+}
+
+
+
+
+/*-----------------------------------
+    2.2 SLIDER AREA
+-------------------------------------*/
+
+.header-top-area {
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    text-transform: uppercase;
+}
+
+.slider-area {
+    font-family: 'Raleway', sans-serif;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    font-weight: 900;
+    color: #fff;
+}
+
+.slider-area h1 {
+    font-size: 65px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.slider-area h1 span {
+    font-weight: 700;
+}
+
+.slider-area h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 82px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.slider-area h3 {
+    font-family: lato;
+    font-weight: 700;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+.slider-area h3 a,
+a.home-reservation-button {
+    border: 1px solid;
+    color: #fff;
+    display: inline-block;
+    font-size: 13px;
+    margin-top: 15px;
+    padding: 10px 30px;
+}
+
+.slider-area h3 a:hover,
+a.home-reservation-button:hover {
+    color: #fff;
+    background: #ca3d26 none repeat scroll 0 0;
+    border-color: #ca3d26;
+}
+
+.pogoSlider {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 0;
+}
+
+.pogoSlider-slide {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-size: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    opacity: 0;
+    overflow: hidden;
+    -webkit-perspective: 1300px;
+    perspective: 1300px;
+    position: absolute;
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-top: 5%
+}
+
+.pogoSlider-slide::after {
+    background: #000 url("img/pattarn.png") repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}

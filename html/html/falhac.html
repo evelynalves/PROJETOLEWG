@@ -1,10 +1,10 @@
+
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<title>Inventário - Login</title>
-	<link href="" rel="shortcut icon" type="image/x-icon"/>
-</head>
+	<link href="Senai.ico" rel="shortcut icon" type="image/x-icon"/>
 	<style>
 
 	@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
@@ -47,12 +47,11 @@
 
 }
 .logo{
-	width: 	150px;
 	margin: 0 auto;
-	margin-top: 30%;
-	text-align: center;
+	margin-top: 40%;
 	color: white;
 	font-family: 'Titillium Web', sans-serif;
+
 }
 
 .formulario{
@@ -66,7 +65,7 @@
 	margin-bottom: 1em;
 	}
 .formulario input[type="submit"]{
-		width: 50%;
+		width: 103%;
 		height: 2.5em;
 		text-align: center;
 		border-radius: 3px; 
@@ -86,17 +85,14 @@
 <body>
 <div class="conteudo_geral">
 	<div class="conteudo_esquerdo">
-		<center><img src="slider1/4.jpg">
+		<center><img src="../slider1/4.jpg">
 	</div>
 	<div class="conteudo_direito">
 		<div class="logo">
-			<h1>LOGIN</h1>
+			<red><center><h2>O nome de usuário e/ou senha inserido não pertence a um usuário. Verifique seu nome de usuário e/ou senha e tente novamente.<center></br></h2><red>
 		</div>
-		<form class="formulario" action="cgi-bin/login.cgi" method="post">
-			<input type="text" name="nome" placeholder="Digite seu nome de usuário">
-			<input type="password" name="senha" placeholder="Digite sua senha">
-		
-				<input type="submit" name="entrar" value="Entrar">
+		<form class="formulario" action="../login.html" method="post">
+			<input type="submit" name="voltar" value="Voltar">
 		
 		
 		</form>
@@ -104,3 +100,4 @@
 </div>
 </body>
 </html>
+
